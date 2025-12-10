@@ -1,14 +1,44 @@
 {
   "players": [
     {
-      "id": "player_1765356588001_8nbnvk6co",
-      "name": "game",
-      "coins": 5,
+      "id": "player_1765357167988_hzcgxvpsv",
+      "name": "Новый игрок",
+      "coins": 1,
       "clickPower": 1,
       "autoClickRate": 0,
       "upgrades": [],
-      "createdAt": "2025-12-10T08:49:48.001Z",
-      "lastUpdate": "2025-12-10T08:49:50.567Z"
+      "createdAt": "2025-12-10T08:59:27.988Z",
+      "lastUpdate": "2025-12-10T09:03:10.105Z"
+    },
+    {
+      "id": "player_1765357610698_irjhzjzim",
+      "name": "Igrok",
+      "coins": 0,
+      "clickPower": 1,
+      "autoClickRate": 0,
+      "upgrades": [],
+      "createdAt": "2025-12-10T09:06:50.698Z",
+      "lastUpdate": "2025-12-10T09:06:50.698Z"
+    },
+    {
+      "id": "player_1765357631244_ymv40fgnr",
+      "name": "asd",
+      "coins": 123123123412341250,
+      "clickPower": 1,
+      "autoClickRate": 0,
+      "upgrades": [],
+      "createdAt": "2025-12-10T09:07:11.244Z",
+      "lastUpdate": "2025-12-10T09:08:16.679Z"
+    },
+    {
+      "id": "player_1765357649353_9h9phbrty",
+      "name": "Igrodfgsdfgsdfk",
+      "coins": 0,
+      "clickPower": 1,
+      "autoClickRate": 0,
+      "upgrades": [],
+      "createdAt": "2025-12-10T09:07:29.353Z",
+      "lastUpdate": "2025-12-10T09:07:29.353Z"
     }
   ]
 }
