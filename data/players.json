@@ -1,0 +1,14 @@
+{
+  "players": [
+    {
+      "id": "player_1765356588001_8nbnvk6co",
+      "name": "game",
+      "coins": 5,
+      "clickPower": 1,
+      "autoClickRate": 0,
+      "upgrades": [],
+      "createdAt": "2025-12-10T08:49:48.001Z",
+      "lastUpdate": "2025-12-10T08:49:50.567Z"
+    }
+  ]
+}

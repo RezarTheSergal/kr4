@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Простой кликер</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="title-text">Простой кликер</h1>
+      <div id="player-info" class="hidden">
+        <span id="player-name"></span>
+      </div>
+    </header>
+
+    <div id="start-screen">
+      <input type="text" id="name-input" placeholder="Ваше имя (2–20 символов)" maxlength="20">
+      <button id="start-button">Играть</button>
+    </div>
+
+    <div id="game-screen" class="hidden">
+      <div class="click-area">
+        <button id="click-button" class="coin-button">
+        </button>
+      </div>
+
+      <!-- Статистика (появляется после 3 кликов) -->
+      <div id="stats" class="stats hidden">
+        <div class="stat-item">
+          <span class="stat-label">Монеты:</span>
+          <span id="coins" class="stat-value">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Сила клика:</span>
+          <span id="click-power" class="stat-value">1</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Авто/сек:</span>
+          <span id="auto-rate" class="stat-value">0</span>
+        </div>
+      </div>
+
+      <!-- Панель улучшений (слева, появляется после 3 кликов) -->
+      <div id="upgrades-panel" class="upgrades-panel hidden">
+        <h2>Улучшения</h2>
+        <div class="upgrade-tabs">
+          <button class="tab-button active" data-category="all">Все</button>
+          <button class="tab-button" data-category="click">Клик</button>
+          <button class="tab-button" data-category="auto">Авто</button>
+        </div>
+        <div id="upgrades-list" class="upgrades-list"></div>
+      </div>
+
+      <div class="actions">
+        <button id="reset-button" class="danger-button">Сбросить</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/game.js"></script>
+</body>
+</html>

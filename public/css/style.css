@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f0f0 url('/images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  max-width: 800px;
+  width: 100%;
+  padding: 24px;
+  position: relative;
+}
+
+.title-text {
+  color: aqua;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.2em;
+}
+
+h2 {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+#player-info {
+  color: #666;
+  font-size: 1.1em;
+}
+
+#start-screen {
+  text-align: center;
+  padding: 30px 0;
+}
+
+#name-input {
+  width: 100%;
+  max-width: 280px;
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+#name-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#start-button {
+  background: #667eea;
+  color: white;
+  padding: 12px 32px;
+}
+
+#start-button:hover {
+  background: #5a6fd8;
+}
+
+.coin-button {
+  background: url('/images/sergal-1.png') no-repeat center center;
+  background-size: contain;
+  border: none;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px;
+  cursor: pointer;
+  transition: transform 0.1s ease, background-image 0.1s ease;
+  padding: 0;
+}
+
+.coin-button:active {
+  transform: scale(0.98);
+  background-image: url('/images/sergal-2.png');
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  padding: 16px;
+  background: #f9f9f9;
+  border-radius: 12px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-label {
+  display: block;
+  color: #777;
+  font-size: 0.85em;
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  display: block;
+  color: #333;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.upgrades-panel {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 220px;
+  background: #f5f5f5;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.upgrades-panel h2 {
+  font-size: 1.2em;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.upgrade-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.tab-button {
+  background: #ddd;
+  color: #333;
+  font-size: 0.85em;
+  padding: 6px 10px;
+  flex: 1;
+}
+
+.tab-button.active {
+  background: #667eea;
+  color: white;
+}
+
+.upgrades-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.upgrade-card {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.9em;
+}
+
+.upgrade-card.owned {
+  opacity: 0.6;
+  background: #d4edda;
+}
+
+.upgrade-card.cannot-afford {
+  opacity: 0.5;
+}
+
+.upgrade-name {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.upgrade-cost {
+  color: #d35400;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.upgrade-button {
+  background: #667eea;
+  color: white;
+  padding: 6px;
+  width: 100%;
+  font-size: 0.85em;
+}
+
+.upgrade-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.danger-button {
+  background: #dc3545;
+  color: white;
+}
+
+.danger-button:hover {
+  background: #c82333;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.coin-button.clicked {
+  animation: scale(0.98) 0.2s ease-in-out;
+}
